@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>[ACCESSIBILITY] 퍼블리싱</title>
+<link rel="stylesheet" href="./mockup.css">
+<script src="./jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<div class="pub-wrap" data-layout="direction-accessibility">
+	<div class="pub-page">
+		<div class="pub-header">
+			<div class="pub-header-inr">
+				<div class="pub-title">
+					<h1>접근성</h1>
+				</div>
+				<div class="pub-side">
+					<div class="pub-side-inr">
+						<div class="pub-legend">
+							<div class="pub-group">
+								<button type="button" aria-expanded="false" class="pub-global-btn"><span></span><span></span><span></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pub-content">
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>애플리케이션</span></h2></div>
+				<div class="pub-site-content">
+					<div class="pub-area">
+						<p>모바일 기기마다 음성 안내를 위한 애플리케이션을 지원한다.</p>
+						<ul>
+							<li><em>Voice Assistant</em> (Android)
+								<ul>
+									<li>[실행] 설정 &gt; 접근성 &gt; Voice Assistant &gt; 실행</li>
+									<li>[단축키] 설정 &gt; 접근성 &gt; 볼륨 키 단축키 탭 &gt; 볼륨 키 단축키 설정 (볼륨 키를 3초 동안 눌러 접근성 도구 실행)</li>
+								</ul>
+							</li>
+							<li><em>VoiceOver</em> (iOS)
+								<ul>
+									<li>[실행] 설정 &gt; 손쉬운 사용 &gt; VoiceOver &gt; 실행</li>
+									<li>[단축키] 설정 &gt; 손쉬운 사용 단축키 &gt; VoiceOver 선택 (종료키를 연속 3번 누르면 바로 실행)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>속성정의</span></h2></div>
+				<div class="pub-site-content">
+					<div class="pub-area">
+						<div class="pub-sub-title"><h3><span>title 속성</span></h3></div>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:15%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="2">구분</th>
+										<th scope="col">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" colspan="2">링크가 새창인 경우</th>
+										<td>[title] 새 창 열림 <strong>(일부 스크린리더에서 target="_blank" 속성만으로 알림을 주지 않음)</strong></td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">이메일</th>
+										<td>[title] 이메일 아이디 @ 이메일 도메인</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">휴대폰번호</th>
+										<td>[title] 휴대폰번호 앞자리 - 휴대폰번호 중간자리 - 휴대폰번호 뒷자리<br> [title] 휴대폰번호 앞자리 - 휴대폰번호 중간/뒷자리</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">유선전화번호</th>
+										<td>[title] 유선전화번호 앞자리 - 유선전화번호 중간자리 - 유선전화번호 뒷자리<br> [title] 유선전화번호 앞자리 - 유선전화번호 중간/뒷자리</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">자택 주소</th>
+										<td>[title] 자택 우편번호<br>[title]  자택 기본주소 / 자택 나머지주소</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">조회기간</th>
+										<td>title] 조회 시작일자 ~ 조회 종료일자<br>[title] 조회 시작연도 / 조회 시작월 / 조회 시작일 ~ 조회 종료연도 / 조회 종료월 / 조회 종료일</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">생년월일</th>
+										<td>[title] 생년월일<br>[title] 출생년도 / 출생월 / 출생일</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">주민등록번호</th>
+										<td>[title] 주민등록번호 앞 6자리 / 주민등록번호 뒤 7자리</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">외국인등록번호</th>
+										<td>[title] 외국인등록번호 앞 6자리 / 외국인등록번호 뒤 7자리</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">법인번호</th>
+										<td>[title] 법인번호 앞 6자리 / 법인번호 뒤 7자리</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">사업자등록번호</th>
+										<td>[title] 사업자등록번호 앞 3자리 / 사업자등록번호 중간 2자리 / 사업자등록번호 뒤 5자리</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">카드번호</th>
+										<td>[title] 카드번호 첫번째 4자리 / 카드번호 두번째 4자리 / 카드번호 세번째 4자리 / 카드번호 네번째 4자리</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">선택이 필요한 메뉴인 경우</th>
+										<td>[title] 현재 선택</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">선택이 필요한 페이지인 경우</th>
+										<td>[title] 현재 페이지</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">단계가 있는 경우</th>
+										<td>[title] 현재 단계</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">iframe</th>
+										<th scope="row">default</th>
+										<td>[title] *** 프레임</td>
+									</tr>
+									<tr>
+										<th scope="row">hidden</th>
+										<td>[title] 숨김 프레임</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="pub-ref">※ 스크린리더 사용자중 placeholder 기능을 끄고 사용하시는 분들이 있어서 title 작성 시 placehoder의 내용도 함께 작성해준다. (맨 마지막에는 '입력 또는 선택' 문구는 넣지 않음)</p>
+
+						<div class="pub-sub-title"><h3><span>role 속성</span></h3></div>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:30%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">속성</th>
+										<th scope="col">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">role="main"</th>
+										<td>본문의 주요 콘텐츠 영역으로 한 페이지 내에 1개만 사용이 가능하며, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt; 요소의 하위 요소로 사용할 수 없다.</td>
+									</tr>
+									<tr>
+										<th scope="row">role="navigation"</th>
+										<td>다른 페이지 또는 페이지 내 특정 영역으로 이동하는 링크 콘텐츠 영역으로 주로 메인 메뉴 및 서브 메뉴 등에 사용할 수 있다.</td>
+									</tr>
+									<tr>
+										<th scope="row">role="banner"</th>
+										<td>비슷한 의미로 &lt;header&gt; 요소를 사용할 수 있으나 &lt;header role=""banner"&gt;로 사용하였다면 한 페이지에서 한 개의 &lt;header&gt; 요소만 사용하길 권장한다.</td>
+									</tr>
+									<tr>
+										<th scope="row">role="form"</th>
+										<td>폼과 관련된 요소의 모임을 표현하는 영역으로 서버에 전송될 수 있는 콘텐츠를 포함 할 수 있다.</td>
+									</tr>
+									<tr>
+										<th scope="row">role="heading"</th>
+										<td>헤딩 (예: role="heading" aria-level="1")</td>
+									</tr>
+									<tr>
+										<th scope="row">role="button"</th>
+										<td>버튼</td>
+									</tr>
+									<tr>
+										<th scope="row">role="img"</th>
+										<td>이미지</td>
+									</tr>
+									<tr>
+										<th scope="row">role="text"</th>
+										<td>문장</td>
+									</tr>
+									<tr>
+										<th scope="row">role="tablist|presentation|tab|tabpanel"</th>
+										<td>탭 목록, 탭, 탭 패널</td>
+									</tr>
+									<tr>
+										<th scope="row">role="tooltip"</th>
+										<td>툴팁</td>
+									</tr>
+									<tr>
+										<th scope="row">role="alert"</th>
+										<td>알럿</td>
+									</tr>
+									<tr>
+										<th scope="row">role="alertdialog"</th>
+										<td>알럿 대화상자</td>
+									</tr>
+									<tr>
+										<th scope="row">role="dialog"</th>
+										<td>대화상자</td>
+									</tr>
+									<tr>
+										<th scope="row">role="search"</th>
+										<td>검색</td>
+									</tr>
+									<tr>
+										<th scope="row">role="radiogroup" / role="radio" aria-checked="true|false"</th>
+										<td>라디오 그룹 / 라디오</td>
+									</tr>
+									<tr>
+										<th scope="row">role="checkboxgroup" / role="checkbox" aria-checked="true|false"</th>
+										<td>체크박스 그룹 / 체크박스</td>
+									</tr>
+									<tr>
+										<th scope="row">role="progressbar"</th>
+										<td>프로그래스바 (예: role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100")</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="pub-sub-title"><h3><span>aria 속성</span></h3></div>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:30%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">속성</th>
+										<th scope="col">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">aria-hidden="true|false|undefined"</th>
+										<td>숨김 상태</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-pressed="true|false|mixed|undefined"</th>
+										<td>눌림 상태 (토글 형태)</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-expanded="true|false|undefined"</th>
+										<td>확장 상태</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-selected="true|false|undefined"</th>
+										<td>선택 상태 (button에는 사용불가)</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-label="string"</th>
+										<td>간결한 설명</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-labelledby="ID reference list"</th>
+										<td>간결한 설명 참조</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-describedby="ID reference list"</th>
+										<td>자세한 설명 참조</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-controls="ID reference list"</th>
+										<td>제어 대상</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-haspopup="true"</th>
+										<td>팝업 안내</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-modal="true|false"</th>
+										<td>모달</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-live="polite|assertive|off"</th>
+										<td>실시간</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-atomic="true|false"</th>
+										<td>업데이트 영역</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-disabled="true|false"</th>
+										<td>비활성화</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-multiselectable="true|false"</th>
+										<td>하나 이상의 요소 선택</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-current="page"</th>
+										<td>현재 페이지 강조</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-current="location"</th>
+										<td>현재 위치 강조</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-current="step"</th>
+										<td>현재 단계 강조</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-current="time"</th>
+										<td>현재 시간 강조</td>
+									</tr>
+									<tr>
+										<th scope="row">aria-required="true"</th>
+										<td>해당 항목이 필수 항목(Require)임을 알 수 있도록 제공</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="pub-sub-title"><h4><span>주메뉴 구성1</span></h4></div>
+						<pre>
+&lt;ul role="tree"&gt;
+	&lt;li role="treeitem" aria-expanded="true"&gt;
+		&lt;a href=""&gt;WAI-ARIA 소개&lt;/a&gt;
+		&lt;ul role="group"&gt;
+			&lt;li role="treeitem" aria-expanded="false"&gt;
+				&lt;a href=""&gt;WAI-ARIA 란?&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li role="treeitem" aria-expanded="false"&gt;
+		&lt;a href=""&gt;WAI-ARIA의 목적&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+						<div class="pub-sub-title"><h4><span>주메뉴 구성2</span></h4></div>
+						<pre>
+&lt;button aria-haspopup="true" aria-controls="video-menu" aria-expanded="false"&gt;설정&lt;/button&gt;
+&lt;div id="video-menu" role="menu" aria-label="설정"&gt;
+	&lt;button role="menuitem" aria-haspopup="true" aria-controls="resolution-menu" aria-expanded="false" tabindex="-1"&gt;해상도 자동(480p)&lt;/button&gt;
+	&lt;div id="resolution-menu"&gt;
+		&lt;ul role="menu"&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;자동(480p)&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;1080p HD&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;720p HD&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;480p&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;360p&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;270p&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;button role="menuitem" aria-haspopup="true" aria-controls="speed-menu" aria-expanded="false" tabindex="-1"&gt;재생속도 1.0x(기본)&lt;/button&gt;
+	&lt;div id="speed-menu"&gt;
+		&lt;ul role="menu"&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;0.25x&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;0.5x&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;0.75x&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;1.0x(기본)&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;1.25x&lt;/a&gt;&lt;/li&gt;
+			&lt;li role="none"&gt;&lt;a href="#" role="menuitem"&gt;1.5x&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+						<div class="pub-sub-title"><h4><span>주메뉴 구성3</span></h4></div>
+						<pre>
+&lt;ul&gt;
+	&lt;li&gt;
+		&lt;a href="" aria-controls="menu1" aria-expanded="true"&gt;WAI-ARIA 소개&lt;/a&gt;
+		&lt;ul id="menu1"&gt;
+			&lt;li&gt;
+				&lt;a href=""&gt;WAI-ARIA 란?&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href="" aria-controls="menu2" aria-expanded="false"&gt;WAI-ARIA 소개&lt;/a&gt;
+		&lt;ul id="menu2"&gt;
+			&lt;li&gt;
+				&lt;a href=""&gt;WAI-ARIA 란?&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li"&gt;
+		&lt;a href=""&gt;WAI-ARIA의 목적&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+						<div class="pub-sub-title"><h4><span>탭메뉴 구성</span></h4></div>
+						<pre>
+&lt;ul role="tablist"&gt;
+	&lt;li role="presentation"&gt;&lt;a href="" id="tab1" role="tab" aria-controls="section1" aria-selected="true"&gt;메뉴&lt;/a&gt;&lt;/li&gt;
+	&lt;li role="presentation"&gt;&lt;a href="" id="tab2" role="tab" aria-controls="section2" aria-selected="false"&gt;메뉴&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="section1" role="tabpanel" aria-labelledby="tab1"&gt;
+	콘텐츠
+&lt;/div&gt;
+&lt;div id="section2" role="tabpanel" aria-labelledby="tab2"&gt;
+	콘텐츠
+&lt;/div&gt;
+						</pre>
+						<div class="pub-sub-title"><h4><span>추천검색 구성</span></h4></div>
+						<pre>
+&lt;input type="text" name="search" id="search" autocomplete="off" role="combobox" aria-autocomplete="list" aria-haspopup="true"&gt;
+&lt;input type="text" name="search" id="search" autocomplete="off" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-activedescendant="list1"&gt; /* 목록 선택 후 */
+
+&lt;div id="status" role="status" aria-live="polite" aria-relevant="additions"&gt;
+	&lt;div&gt;10개의 추천 검색어가 있습니다.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul role="listbox"&gt;
+	&lt;li id="list0" role="option"&gt;완벽하지 않은 것들에 대한 사랑&lt;/li&gt;
+	&lt;li id="list1" role="option"&gt;사랑해 사랑해 사랑해&lt;/li&gt;
+	&lt;li id="list2" role="option"&gt;나를 사랑하지 않는 나에게&lt;/li&gt;
+	&lt;li id="list3" role="option"&gt;왜 나는 너를 사랑하는가&lt;/li&gt;
+	&lt;li id="list4" role="option"&gt;사랑해요 엄마&lt;/li&gt;
+	&lt;li id="list5" role="option"&gt;미안하고 고맙고 사랑해&lt;/li&gt;
+	&lt;li id="list6" role="option"&gt;사랑의 기술&lt;/li&gt;
+	&lt;li id="list7" role="option"&gt;5가지 사랑의 언어&lt;/li&gt;
+	&lt;li id="list8" role="option"&gt;사랑하는 내 아이에게 갓 구운 빵과 쿠키&lt;/li&gt;
+	&lt;li id="list9" role="option"&gt;모네가 사랑한 정원&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+						<div class="pub-sub-title"><h4><span>검색 구성</span></h4></div>
+						<pre>
+&lt;form action="#" name="" method="get"&gt;
+	&lt;fieldset&gt;
+		&lt;label for="keyword"&gt;검색어&lt;/label&gt;
+		&lt;input type="text" name="" id="keyword" required="true"&gt;
+		&lt;button type="submit"&gt;검색&lt;/button&gt;
+	&lt;/fieldset&gt;
+&lt;/form&gt;
+						</pre>
+						<div class="pub-sub-title"><h4><span>아이디/패스워드 구성</span></h4></div>
+						<pre>
+&lt;input type="text" aria-label="아이디" aria-describedby="id-helper" title="아이디" placeholder="아이디"&gt;
+&lt;p id="id-helper"&gt;5~20자의 영문 소문자, 숫자와 특수기호(_), (-)만 사용하여 입력해 주세요.&lt;/p&gt;
+&lt;input type="text" aria-label="패스워드" aria-describedby="pw-helper" title="패스워드" placeholder="패스워드"&gt;
+&lt;p id="pw-helper"&gt;6~16자 영문 대 소문자, 숫자, 특수문자를 사용하여 입력해 주세요.&lt;/p&gt;
+						</pre>
+						<div class="pub-sub-title"><h4><span>콤보박스 구성</span></h4></div>
+						<pre>
+&lt;ul role="listbox"&gt;
+	&lt;li role="option"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>기타정의</span></h2></div>
+				<div class="pub-site-content">
+					<div class="pub-area">
+						<div class="pub-sub-title"><h3><span>버튼</span></h3></div>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:15%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="2">구분</th>
+										<th scope="col">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" colspan="2">최소 사이즈</th>
+										<td>17px * 17px</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">목록이 있는 링크일 경우</th>
+										<td>예) 더보기 - 공지사항</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">다운로드 버튼인 경우</th>
+										<td>예) 다운로드 - 파일명</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">하위 메뉴가 있는 경우<br> (토글처리)</th>
+										<td>[off] 하위메뉴 펼치기 / [on] 하위메뉴 접기</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">상세 내용이 있는 경우<br> (토글처리)</th>
+										<td>[off] 상세내용 펼치기 / [on] 상세내용 접기</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="pub-area">
+						<div class="pub-sub-title"><h3><span>폼요소</span></h3></div>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:15%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="2">구분</th>
+										<th scope="col">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" colspan="2">필수 입력</th>
+										<td>폼요소에 required 속성 적용</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">글자 제한</th>
+										<td>textarea 영역에 0/300 처럼 글자 제한이 있는 경우 title 속성에도 관련 내용을 넣어줘야 한다.<br> 예) title="내용(최대 300자 이내)"</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="pub-area">
+						<div class="pub-sub-title"><h3><span>스크롤</span></h3></div>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:15%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="2">구분</th>
+										<th scope="col">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" colspan="2">tabindex="0"</th>
+										<td>tabindex 속성은 유동적 처리한다. (스크롤이 없는 경우는 tabindex 속성을 넣지 않고 스크롤이 있는 경우에만 tabindex 속성을 넣어줘야 함)<br> ※예외로, 박스내 anchor 또는 button 처럼 접근이 가능한 태그가 있는 경우에는 기본적으로 tabindex 속성을 처리하지 않아도 된다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="pub-area">
+						<div class="pub-sub-title"><h3><span>테이블</span></h3></div>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:15%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="2">구분</th>
+										<th scope="col">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" colspan="2">caption</th>
+										<td>관련 제목만 넣어줘도 된다.</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">선택 요소 (전체)</th>
+										<td>&lt;input type="checkbox" name="" id="UI-tbl-chk"&gt;&lt;label for="UI-tbl-chk" class="blind"&gt;전체&lt;/label&gt;</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">선택 요소</th>
+										<td>&lt;input type="checkbox" name="" id="UI-tbl-chk1"&gt;&lt;label for="UI-tbl-chk1" class="blind"&gt;항목명1:&lt;em&gt;항목값1&lt;/em&gt;,항목명2:&lt;em&gt;항목값2&lt;/em&gt;&lt;/label&gt;</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">버튼 요소</th>
+										<td>&lt;button type="button"&gt;&lt;span&gt;버튼명&lt;/span&gt;&lt;span class="blind"&gt;항목명1:&lt;em&gt;항목값1&lt;/em&gt;,항목명2:&lt;em&gt;항목값2&lt;/em&gt;&lt;/span&gt;&lt;/button&gt;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>지침기준</span></h2></div>
+				<div class="pub-site-content">
+					<div class="pub-area">
+						<div class="pub-sub-title"><h3><span>한국형 웹 콘텐츠 접근성 지침 2.1</span></h3></div>
+						<p class="pub-comment">http://www.wah.or.kr/Participation/guide.asp</p>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:15%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">원칙 (4)</th>
+										<th scope="col">지침 (13)</th>
+										<th scope="col">검사항목 (24)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="7">1. 인식의 용이성</th>
+										<td>1.1 대체 텍스트</td>
+										<td>1.1.1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</td>
+									</tr>
+									<tr>
+										<td>1.2 멀티미디어 대체 수단</td>
+										<td>1.2.1. (자막 제공) 멀티미디어 콘텐츠에는 자막, 대본 또는 수화를 제공해야 한다.</td>
+									</tr>
+									<tr>
+										<td rowspan="5">1.3. 명료성</td>
+										<td>1.3.1. (색에 무관한 콘텐츠 인식) 콘텐츠는 색에 관계없이 인식될 수 있어야 한다.</td>
+									</tr>
+									<tr>
+										<td>1.3.2. (명확한 지시 사항 제공) 지시 사항은 모양, 크기, 위치, 방향, 색, 소리 등에 관계없이 인식될 수 있어야 한다.</td>
+									</tr>
+									<tr>
+										<td>1.3.3. (텍스트 콘텐츠의 명도 대비) 텍스트 콘텐츠와 배경 간의 명도 대비는 4.5 대 1 이상이어야 한다.</td>
+									</tr>
+									<tr>
+										<td>1.3.4. (자동 재생 금지) 자동으로 소리가 재생되지 않아야 한다.</td>
+									</tr>
+									<tr>
+										<td>1.3.5. (콘텐츠 간의 구분) 이웃한 콘텐츠는 구별될 수 있어야 한다.</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="9">2. 운용의 용이성</th>
+										<td rowspan="3">2.1 입력장치 접근성</td>
+										<td>2.1.1 (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.</td>
+									</tr>
+									<tr>
+										<td>2.1.2. (초점 이동) 키보드에 의한 초점은 논리적으로 이동해야 하며 시각적으로 구별할 수 있어야 한다.</td>
+									</tr>
+									<tr>
+										<td>2.1.3. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</td>
+									</tr>
+									<tr>
+										<td rowspan="2">2.2. 충분한 시간 제공</td>
+										<td>2.2.1. (응답시간 조절) 시간제한이 있는 콘텐츠는 응답시간을 조절할 수 있어야 한다.</td>
+									</tr>
+									<tr>
+										<td>2.2.2. (정지 기능 제공) 자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.</td>
+									</tr>
+									<tr>
+										<td>2.3. 광과민성 발작 예방</td>
+										<td>2.3.1. (깜빡임과 번쩍임 사용 제한) 초당 3~50 회 주기로 깜빡이거나 번쩍이는 콘텐츠를 제공하지 않아야 한다.</td>
+									</tr>
+									<tr>
+										<td rowspan="3">2.4. 쉬운 내비게이션</td>
+										<td>2.4.1. (반복 영역 건너뛰기) 콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.</td>
+									</tr>
+									<tr>
+										<td>2.4.2. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.</td>
+									</tr>
+									<tr>
+										<td>2.4.3. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="6">3. 이해의 용이성</th>
+										<td>3.1. 가독성</td>
+										<td>3.1.1. (기본 언어 표시) 주로 사용하는 언어를 명시해야 한다.</td>
+									</tr>
+									<tr>
+										<td>3.2. 예측 가능성</td>
+										<td>3.2.1. (사용자 요구에 따른 실행) 사용자가 의도하지 않은 기능(새 창, 초점에 의한 맥락 변화 등)은 실행되지 않아야 한다.</td>
+									</tr>
+									<tr>
+										<td rowspan="2">3.3. 콘텐츠의 논리성</td>
+										<td>3.3.1. (콘텐츠의 선형 구조) 콘텐츠는 논리적인 순서로 제공해야 한다.</td>
+									</tr>
+									<tr>
+										<td>3.3.2. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</td>
+									</tr>
+									<tr>
+										<td rowspan="2">3.4. 입력 도움</td>
+										<td>3.4.1. (레이블 제공) 사용자 입력에는 대응하는 레이블을 제공해야 한다.</td>
+									</tr>
+									<tr>
+										<td>3.4.2. (오류 정정) 입력 오류를 정정할 수 있는 방법을 제공해야 한다.</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">4. 견고성</th>
+										<td>4.1. 문법 준수</td>
+										<td>4.1.1. (마크업 오류 방지) 마크업 언어의 요소는 열고 닫음, 중첩 관계 및 속성 선언에 오류가 없어야 한다.</td>
+									</tr>
+									<tr>
+										<td>4.2. 웹 애플리케이션 접근성</td>
+										<td>4.2.1. (웹 애플리케이션 접근성 준수) 콘텐츠에 포함된 웹 애플리케이션은 접근성이 있어야 한다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="pub-sub-title"><h3><span>모바일 애플리케이션 콘텐츠 접근성 지침 2.1</span></h3></div>
+						<p class="pub-comment">https://www.wah.or.kr:444/board/boardView.asp?page=1&brd_sn=4&brd_idx=1013</p>
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:35%">
+									<col style="width:35%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">원칙 (10)</th>
+										<th scope="col">지침 (28)</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1. 개요</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<th scope="row">2. 표준의 구성 및 범위</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<th scope="row">3. 참조 표준(권고)</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<th scope="row">4. 용어 정의</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<th scope="row">5. 모바일 애플리케이션 콘텐츠 접근성 준수 사항</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="7">6. 인식의 용이성</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<td>6.1 대체 텍스트</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>6.2 자막, 수화 등의 제공</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>6.3 색에 무관한 인식</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>6.4 명도 대비</td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<td>6.5 명확한 지시사항</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>6.6 알림 기능</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="6">7. 운용의 용이성</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<td>7.1 초점</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>7.2 누르기 동작 지원</td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<td>7.3 응답시간 조절</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>7.4 정지기능 제공</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>7.5 컨트롤의 크기와 간격</td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="6">8. 이해의 용이성</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<td>8.1 입력 도움</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>8.2 사용자 인터페이스의 일관성</td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<td>8.3 깜박거림의 사용 제한</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>8.4 자동재생 금지</td>
+										<td>신설</td>
+									</tr>
+									<tr>
+										<td>8.5 예측가능성</td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="3">9. 견고성</th>
+										<td></td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<td>9.1 폰트 관련 기능의 활용</td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<td>9.2 보조기술과 호환성</td>
+										<td>수정</td>
+									</tr>
+									<tr>
+										<th scope="row">10. 접근성의 사용자 평가 권고</th>
+										<td></td>
+										<td>신설</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>진단정보</span></h2></div>
+				<div class="pub-site-content">
+					<div class="pub-area">
+						<div class="pub-table">
+							<table class="al">
+								<colgroup>
+									<col style="width:20%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">상세내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="9">적절한 대체텍스트 제공</th>
+										<td>&lt;img&gt;, &lt;input type="image"&gt;, 이미지맵&lt;area&gt; 등의 필수 요소인 대체텍스트(alt) 속성이 존재하는가?</td>
+									</tr>
+									<tr>
+										<td>이미지와 동등한 정보의 대체텍스트(alt)를 요약으로 제공하지 않고 모두 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>배너/이벤트성 이미지에 행사기간, 장소 등 세부정보를 모두 기입하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>이미지와 틀린 정보의 대체텍스트(alt)를 제공하고 있지는 않는가?</td>
+									</tr>
+									<tr>
+										<td>데이터차트나 그래표 등의 이미지에 대해 그 내용을 충분히 파악할 수 있도록 대체텍스트(alt)를 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>이미지 및 정보에 대한 대체텍스트가 영문/한글을 잘 구분하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>정보 설명이 힘든 이미지의 경우, 설명이 본문에 존재하거나 문맥을 이해할 수 있는가?</td>
+									</tr>
+									<tr>
+										<td>정보가 있는 이미지를 배경이미지로 제공한 경우 대체콘텐츠를 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>정보가 없는 이미지는 대체텍스트(alt) 속성 값을 비우고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="5">멀티미디어 콘텐츠</th>
+										<td>동영상, 오디오 등 멀티미디어 콘텐츠에 자막, 원고, 수화 중 하나 이상의 대체수단을 제공하는가?</td>
+									</tr>
+									<tr>
+										<td>동영상, 오디오 등의 내용 전체를 충분히 설명하지 않고 요약정보나 제목만을 제공하고 있지는 않는가?</td>
+									</tr>
+									<tr>
+										<td>동영상, 오디오 등을 사전에 멈춤 상태로 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>플래시 동영상의 경우, 플래시 자체적인 웹접근성을 준수하여 제작하였는가?</td>
+									</tr>
+									<tr>
+										<td>텍스트 제공 동영상의 경우, 설명을 음성으로 제공하거나 대체콘텐츠를 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">색에 무관한 콘텐츠 인식</th>
+										<td>색에 관계없이 콘텐츠(별점/그래프/지도 등)를 인식할 수 있도록 명암이나 패턴으로 콘텐츠를 구분하였는가?</td>
+									</tr>
+									<tr>
+										<td>페이지 내비게이션, 메뉴, 현재위치 등에 대해 명함, 패턴 등의 변황없이 색상 변환만으로 위치를 표시하지는 않는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">명확한 지시사항 제공</th>
+										<td>불명확한 지시사항을 제공하고 있지 않는가?</td>
+									</tr>
+									<tr>
+										<td>왼쪽, 오른쪽으로 이동, ‘붉은색 참조’ ‘*별모양 필수입력’ 과 같이 방향, 색에 상관없이 콘텐츠를 인식할 수 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row">텍스트콘텐츠, 명도대비</th>
+										<td>14pt 미만 텍스트의 명암비는 4.5:1, 14pt 이상의 볼드체 텍스트나 18pt 이상 큰 텍스트의 명암비가 3:1 이상으로 제공되는가?</td>
+									</tr>
+									<tr>
+										<th scope="row">자동재생 배경음</th>
+										<td>동영상, 플래시 등과 같은 음성재생장치가 실행가능한 웹페이지의 경우, 페이지열림과 동시에 3초 이상으로 제공되고 있지는 않은가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="6">키보드 사용 보장</th>
+										<td>Internet Explorer(IE) 브라우저 주소 창에서부터 시작해 Tab키(정방향)와 Shift+Tab키(역방향)를 이용하여 페이지의 모든 기능을 이용하고 이동할 수 있는가?</td>
+									</tr>
+									<tr>
+										<td>마우스 이벤트와 동등한 키보드 이벤트 핸들러를 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>키보드만으로 서식의 이용이 가능한가?(Ex 주민등록번호 입력시 자동으로 포커스가 이동되지 않고 있는가?)</td>
+									</tr>
+									<tr>
+										<td>&lt;img&gt;를 &lt;a&gt;요소로 감싸지 않고, &lt;img src="img.jpg" alt="" onclick="" style="cursor:pointer;"&gt;와 같이 사용하고 있지는 않은가?</td>
+									</tr>
+									<tr>
+										<td>링크정보가 있는 플래시의 경우, wmode를 window로 설정하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>링크정보가 없는 플래시의 경우, wmode를 transparent 또는 opaque로 지정하고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">초점이동</th>
+										<td>키보드에 의한 초점이 논리적으로 이동하고, 시각적으로 구별할 수 있는가?</td>
+									</tr>
+									<tr>
+										<td>키보드 조작시 불가능한 상태로 이동하여 빠져 나올 수 없거나, 이전 페이지로 이동이 불가능한 상태가 되지는 않는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="3">응답시간 조절</th>
+										<td>몇 초 후에 다른 페이지로 이동하도록 구성된 콘텐츠의 시간제한을 해제하거나 연장할 수 있는 수단을 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>짧은 기간동안 나타났다가 일정 시간 후에 사라져버리는 대화창 및 팝업창의 응답시간을 조절할 수 있는가?</td>
+									</tr>
+									<tr>
+										<td>스크롤이 되는 이미지 같은 콘텐츠를 손쉽게 확인할 수 있는 기능("앞으로이동", "뒤로이동", "정지") 등의 컨트롤을 제공하는가?</td>
+									</tr>
+									<tr>
+										<th scope="row">정지기능 제공</th>
+										<td>자동변경콘텐츠에 키보드 포커서 및 마우스 오버시 콘텐츠의 변화가 멈취지고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row">깜박임 제한</th>
+										<td>초당 3~50회 주기로 깜빡이거나 번쩍이는 콘텐츠를 제공하고 있지는 않는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">반복영역 건너뛰기</th>
+										<td>본문 상단에 숨김메뉴 건너뛰기 영역을 제공하고, 제대로 이동이 되는가?</td>
+									</tr>
+									<tr>
+										<td>건너뛰기 링크가 화면에 보이거나, 키보드 접근시 나타나도록 구현되었는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="3">제목제공</th>
+										<td>페이지를 간단명료하게 설명한 적절한 &lt;title&gt;을 제공하며, 타이틀바에 나타나고 있는가?</td>
+									</tr>
+									<tr>
+										<td>&lt;iframe&gt; 및 &lt;flame&gt;을 사용할 경우, 프레임을 설명하는 간단명료한 제목(title)을 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>내용 또는 기능이 없는 프레임에도 "빈프레임", "내용없음"과 같이 title을 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row">적절한 링크텍스트</th>
+										<td>링크의 용도나 목적지를 주변의 맥락과 관계없이 이해할 수 있도록 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">사용자 요구 실행</th>
+										<td>사용자의 입력에 의해서 발생하는 팝업창 미리알림 title="새창열림"을 반드시 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>&lt;type="radio"&gt;, &lt;type="checkbox"&gt;, &lt;select&gt; 등의 컨트롤에 초점이 발생할 경우, 기능이 실행되어 초점변화가 발생하지는 않는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">표의 구성</th>
+										<td>데이터테이블(table)의 제목&lt;caption&gt;을 적절하게 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<td>데이터테이블에 제목 셀과 내용 셀을 &lt;th&gt;와 &lt;td&gt;요소로 구분하여 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row">레이블 제공</th>
+										<td>모든 입력 서식에 대하여 1:1 대응하는 명시적 레이블(lable) 또는 title 속성을 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row">오류정정</th>
+										<td>입력 서식을 잘못 작성한 경우 잘못 입력된 서식에 대한 설명을 제공하고 있는가?</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="3">마크업 오류방지</th>
+										<td>태그의 열고 닫음 오류가 없는가?</td>
+									</tr>
+									<tr>
+										<td>태그의 중첩 오류가 없는가? (&lt;p&gt;&lt;span&gt;&lt;/p&gt;&lt;/span&gt;)</td>
+									</tr>
+									<tr>
+										<td>id가 중복 선언된 속성 오류는 없는가?</td>
+									</tr>
+									<tr>
+										<th scope="row">웹 어플리케이션 접근성 준수</th>
+										<td>플래시, 자바애플릿, ActiveX 외부 콘텐츠가 자체적인 접근성을 지원하거나 대체콘텐츠를 제공하였는가?</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //SITE -->
+
+		</div>
+	</div>
+</div>
+<script src="./mockup.js"></script>
+</body>
+</html>

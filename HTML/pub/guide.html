@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>[GUIDE] 퍼블리싱</title>
+<link rel="stylesheet" href="./mockup.css">
+<script src="./jquery-1.12.4.min.js"></script>
+
+<!-- 페이지경로
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="common.css">
+<!-- //페이지경로 -->
+
+<script>
+	var tab='1';    //탭 여부 (사용 1, 미사용 0)
+</script>
+
+</head>
+<body>
+<div class="pub-wrap" data-layout="guide">
+	<div class="pub-page">
+		<div class="pub-header">
+			<div class="pub-header-inr">
+				<div class="pub-title">
+					<h1>스타일 가이드</h1>
+					<div class="pub-tab-list" style="display:none;">
+						<button type="button" onclick="location.href=''" class="pub-tab on">PC</button>
+						<button type="button" onclick="location.href=''" class="pub-tab">MO</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pub-content">
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>레이아웃</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-tip"><em>NOTE</em><p>참고할 문구입니다.</p></div>
+					<div class="pub-template">
+						<div class="pub-code">
+<pre class="pub-pre">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"&gt;
+&lt;meta name="format-detection" content="telephone=no"&gt;
+&lt;title&gt;사이트명&lt;/title&gt;
+&lt;link rel="stylesheet" href=""&gt;
+&lt;script src=""&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="wrap"&gt;
+	&lt;!-- PAGE --&gt;
+	&lt;div class="page-wrap"&gt;
+		본문영역
+	&lt;/div&gt;
+	&lt;!-- //PAGE --&gt;
+
+	&lt;!-- POPUP --&gt;
+	&lt;div class="popup-wrap"&gt;
+		팝업영역
+	&lt;/div&gt;
+	&lt;!-- //POPUP --&gt;
+&lt;/div&gt;
+
+&lt;!-- DIALOG --&gt;
+&lt;div class="dialog-wrap"&gt;
+	알럿영역
+&lt;/div&gt;
+&lt;!-- //DIALOG --&gt;
+
+&lt;script&gt;
+	함수명(); //함수 호출
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+						</div>
+					</div>
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>프레임</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>구조</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>사이트명</title>
+<link rel="stylesheet" href="">
+<script src=""></script>
+</head>
+<body>
+<div class="wrap">
+	
+</div>
+</body>
+</html>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>프레임(본문)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>구조</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- PAGE -->
+<div class="page-wrap">
+	<div class="header">
+		<h1><span>제목</span></h1>
+		<div class="menu-l">
+			<a href="javascript:void(0)" role="button" class="btn-prev" aria-label="이전화면"></a>
+		</div>
+		<div class="menu-r">
+			<a href="javascript:void(0)" role="button" class="btn-menu" aria-label="전체메뉴"></a>
+		</div>
+	</div>
+	<div class="container" role="main">
+		<div class="content">
+			내용
+		</div>
+		<div class="submit">
+			버튼
+		</div>
+	</div>
+</div>
+<!-- //PAGE -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>프레임(팝업)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>구조</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- POPUP -->
+<div class="popup-wrap" id="popup-id">
+	<div class="dimmed"></div>
+	<div class="popup-body">
+		<div class="popup-header">
+			<h2 class="popup-tit">제목</h2>
+		</div>
+		<div class="popup-container">
+			<div class="popup-content">
+				내용
+			</div>
+			<div class="popup-submit">
+				버튼
+			</div>
+		</div>
+		<button type="button" class="popup-close" aria-label="팝업 닫기" onclick="popupClose('popup-id');"></button>
+	</div>
+</div>
+<!-- //POPUP -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>버튼실행</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>열기</span></h4></div>
+						<div class="pub-sub-title"><h5><span>center</span></h5></div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+onclick="popupOpen('popup-id', 'center');"
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h5><span>bottom</span></h5></div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+onclick="popupOpen('popup-id', 'bottom');"
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h5><span>full</span></h5></div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+onclick="popupOpen('popup-id', 'full');"
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>닫기</span></h4></div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+popupClose('popup-id'); //팝업 닫기
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>바로실행</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-code">
+<xmp class="pub-pre">
+<script>
+	popupOpen('popup-id', 'type'); //팝업 호출
+</script>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>프레임(도움말)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>구조</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+마크업
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-tooltip" title="열기" onclick="tooltipOpen('tooltip-id');"><span class="blind">도움말</span></button>
+<!-- TOOLTIP -->
+<div class="tooltip-wrap" id="tooltip-id">
+	<div class="tooltip-body">
+		<h2 class="tooltip-tit">제목</h2>
+		<div class="tooltip-content">
+			내용
+		</div>
+		<button type="button" class="tooltip-close" onclick="tooltipClose(this);"><span class="blind">도움말 닫기</span></button>
+	</div>
+</div>
+<!-- //TOOLTIP -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>버튼(전송)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>버튼</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>타입1</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-submit1"><span>버튼</span></button>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>타입2</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-submit2"><span>버튼</span></button>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>버튼(콘텐츠)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>그룹</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="btns">
+	버튼
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>SOLID1</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>large</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-solid1 l"><span>버튼</span></button>
+<a href="javascript:void(0)" role="button" class="btn-solid1 l"><span>버튼</span></a>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>medium</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-solid1 m"><span>버튼</span></button>
+<a href="javascript:void(0)" role="button" class="btn-solid1 m"><span>버튼</span></a>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>small</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-solid1 s"><span>버튼</span></button>
+<a href="javascript:void(0)" role="button" class="btn-solid1 s"><span>버튼</span></a>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>OUTLINE1</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>large</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-outline1 l"><span>버튼</span></button>
+<a href="javascript:void(0)" role="button" class="btn-outline1 l"><span>버튼</span></a>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>medium</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-outline1 m"><span>버튼</span></button>
+<a href="javascript:void(0)" role="button" class="btn-outline1 m"><span>버튼</span></a>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>small</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-outline1 s"><span>버튼</span></button>
+<a href="javascript:void(0)" role="button" class="btn-outline1 s"><span>버튼</span></a>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>더보기</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<button type="button" class="btn-more" style="display:block;"><span>버튼</span></button>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>타이틀</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>제목</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>font-size:17px</span></h4></div>
+						<div class="pub-real">
+<div class="tits1">
+	<h2 class="tit">제목입니다.</h2>
+</div>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="tits1">
+	<h2 class="tit">제목</h2>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>font-size:15px</span></h4></div>
+						<div class="pub-real">
+<div class="tits2">
+	<h3 class="tit">제목입니다.</h3>
+</div>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="tits2">
+	<h3 class="tit">제목</h3>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>텍스트</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>문구</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>font-size:15px</span></h4></div>
+						<div class="pub-real">
+<p class="txts1">문구입니다.</p>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<p class="txts1">문구</p>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>font-size:13px</span></h4></div>
+						<div class="pub-real">
+<p class="txts2">문구입니다.</p>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<p class="txts2">문구</p>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>폰트</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>색상 (class)</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+<span class="c1">#bb0841</span>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+c1
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>크기 (class)</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+<span class="fs16">16px</span>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+fs16
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>스타일 (class)</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+<span class="bold">bold</span>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+bold
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+<span class="underline">underline</span>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+underline
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>정렬</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>텍스트 (class)</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>좌측</span></h4></div>
+						<div class="pub-real">
+<p class="al">정렬</p>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+al
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>중앙</span></h4></div>
+						<div class="pub-real">
+<p class="ac">정렬</p>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+ac
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>우측</span></h4></div>
+						<div class="pub-real">
+<p class="ar">정렬</p>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+ar
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>콘텐츠 (class)</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>해제</span></h4></div>
+						<div class="pub-real">
+<div class="cb">
+	<div class="fl">좌측</div>
+	<div class="fr">우측</div>
+</div>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+cb
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>좌측</span></h4></div>
+						<div class="pub-real">
+<div class="fl">좌측</div>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+fl
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>우측</span></h4></div>
+						<div class="pub-real">
+<div class="fr">우측</div>
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+fr
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>리스트</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>DOT</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="list-dot">
+	<ul>
+		<li></li>
+		<li class="no"></li>
+	</ul>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>DASH</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="list-dash">
+	<ul>
+		<li></li>
+		<li class="no"></li>
+	</ul>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>DECIMAL</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="list-decimal">
+	<ol>
+		<li></li>
+		<li></li>
+	</ol>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>CIRCLE</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="list-circle">
+	<ol>
+		<li></li>
+		<li></li>
+	</ol>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>스텝</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>기본</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- STEP -->
+<div class="steps" data-index="1"> <!-- [D] 활성화할 초기값 -->
+	<ol>
+		<li><span>단계1</span></li>
+		<li><span>단계2</span></li>
+	</ol>
+</div>
+<!-- //STEP -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>탭</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>기본</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>타입1</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- TAB -->
+<div class="tab-menu" data-index="1"> <!-- [D] 활성화할 초기값 -->
+	<ul role="tablist">
+		<li role="presentation"><button role="tab"><span>메뉴1</span></button></li>
+		<li role="presentation"><button role="tab"><span>메뉴2</span></button></li>
+	</ul>
+</div>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-panel">
+		<div class="inr">
+			내용1
+		</div>
+	</div>
+	<div role="tabpanel" class="tab-panel">
+		<div class="inr">
+			내용2
+		</div>
+	</div>
+</div>
+<!-- //TAB -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>박스</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>???</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>???</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>메시지</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>노데이타</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+<!-- MESSAGE -->
+<div class="no-data">
+	<p>데이타가 없습니다.</p>
+</div>
+<!-- //MESSAGE -->
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- MESSAGE -->
+<div class="no-data" style="display:block;">
+	<p>데이타가 없습니다.</p>
+</div>
+<!-- //MESSAGE -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>안내문</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+<!-- MESSAGE -->
+<div class="guides">
+	<ul>
+		<li>안내문구</li>
+		<li class="no">안내문구</li>
+	</ul>
+</div>
+<!-- //MESSAGE -->
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- MESSAGE -->
+<div class="guides">
+	<ul>
+		<li>안내문구</li>
+		<li class="no">안내문구</li>
+	</ul>
+</div>
+<!-- //MESSAGE -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>결과</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>성공</span></h4></div>
+						<div class="pub-real">
+<!-- MESSAGE -->
+<div class="msgs true">
+	<div class="tit"><strong>제목</strong></div>
+	<div class="txt">문구</div>
+</div>
+<!-- //MESSAGE -->
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- MESSAGE -->
+<div class="msgs true">
+	<div class="tit"><strong>제목</strong></div>
+	<div class="txt">문구</div>
+</div>
+<!-- //MESSAGE -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>실패</span></h4></div>
+						<div class="pub-real">
+<!-- MESSAGE -->
+<div class="msgs false">
+	<div class="tit"><strong>제목</strong></div>
+	<div class="txt">문구</div>
+</div>
+<!-- //MESSAGE -->
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- MESSAGE -->
+<div class="msgs false">
+	<div class="tit"><strong>제목</strong></div>
+	<div class="txt">문구</div>
+</div>
+<!-- //MESSAGE -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>게시판(테이블)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>수직</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- BOARD -->
+<div class="boards">
+	<div class="table col">
+		<table>
+			<caption>???에 관한 정보를 나타낸 양식(표) 입니다</caption>
+			<colgroup>
+				<col style="width:%">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col"></th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="no-data"><p>데이타가 없습니다.</p></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- //BOARD -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>수평</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- BOARD -->
+<div class="boards">
+	<div class="table row">
+		<table>
+			<caption>???에 관한 정보를 나타낸 양식(표) 입니다</caption>
+			<colgroup>
+				<col style="width:%">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row"></th>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- //BOARD -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>복합</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- BOARD -->
+<div class="boards">
+	<div class="table mix">
+		<table>
+			<caption>???에 관한 정보를 나타낸 양식(표) 입니다</caption>
+			<colgroup>
+				<col style="width:%">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col"></th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row"></th>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- //BOARD -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>게시판(리스트)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>아코디언</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>단일</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- BOARD -->
+<div class="boards">
+	<div class="list" data-index="0"> <!-- [D] 활성화할 초기값, 전체일 경우 all -->
+		<div class="no-data">
+			<p>노데이타</p>
+		</div>
+		<div class="data">
+			<ul>
+				<li>
+					<div class="subj">
+						<a href="javascript:void(0)" role="button" aria-expanded="false">질문</a>
+					</div>
+					<div class="obj">
+						<span class="blind">답변내용</span>
+						<div class="inr">
+							답변
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- //BOARD -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>다중</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- BOARD -->
+<div class="boards">
+	<div class="list multi" data-index="0"> <!-- [D] 할성화할 초기값, 전체일 경우 all -->
+		<div class="no-data">
+			<p>노데이타</p>
+		</div>
+		<div class="data">
+			<ul>
+				<li>
+					<div class="subj">
+						<a href="javascript:void(0)" role="button" aria-expanded="false">질문</a>
+					</div>
+					<div class="obj">
+						<span class="blind">답변내용</span>
+						<div class="inr">
+							답변
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- //BOARD -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>Q&amp;A</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- BOARD -->
+<div class="boards">
+	<div class="list qna" data-index="0"> <!-- [D] 활성화할 초기값, 전체일 경우 all -->
+		<div class="no-data">
+			<p>노데이타</p>
+		</div>
+		<div class="data">
+			<ul>
+				<li>
+					<div class="subj">
+						<a href="javascript:void(0)" role="button" aria-expanded="false">질문</a>
+					</div>
+					<div class="obj">
+						<span class="blind">답변내용</span>
+						<div class="inr">
+							답변
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- //BOARD -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>바로가기</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- BOARD -->
+<div class="boards">
+	<div class="list">
+		<div class="no-data">
+			<p>노데이타</p>
+		</div>
+		<div class="data">
+			<ul>
+				<li><a href="javascript:void(0)">제목</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- //BOARD -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>게시판(상세)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>기본</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- DETAIL -->
+<div class="board-detail">
+	<dl>
+		<dt>
+			<div class="board-tit">
+				<h2>제목</h2>
+			</div>
+			<div class="board-info">
+				정보
+			</div>
+		</dt>
+		<dd>
+			<div class="board-view">
+<pre class="pre">
+내용
+</pre>
+			</div>
+			<div class="board-file">
+				파일
+			</div>
+			<div class="board-etc">
+				기타
+			</div>
+			<div class="board-move">
+				이동
+			</div>
+		</dd>
+	</dl>
+</div>
+<!-- //DETAIL -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>게시판(관련)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>상단</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="tits1">
+	<h2 class="tit">제목</h2>
+	<div class="pages">
+		<div class="total">총<em>10</em>건</div>
+		<div class="count"><em>1</em>/<span>10</span>페이지</div>
+	</div>
+	<div class="items">
+		<div class="btn">
+			<button type="button">버튼</button>
+			<button type="button">버튼</button>
+		</div>
+		<div class="search">
+			<select title="검색분류">
+				<option value="" selected="selected">제목</option>
+				<option value="">내용</option>
+			</select>
+			<input type="text" placeholder="검색어를 입력하세요" title="검색어를 입력하세요">
+			<button type="button">검색</button>
+		</div>
+		<div class="legend">(단위)</div>
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>페이징</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="paginate">
+	<div class="inr">
+		<a href="javascript:void(0)" class="control first" aria-label="처음 페이지"></a>
+		<a href="javascript:void(0)" class="control prev" aria-label="이전 페이지"></a>
+		<a href="javascript:void(0)" aria-current="page">1</a> <!-- [D] 활성화 시 a태그에만 aria-current 속성 처리 -->
+		<a href="javascript:void(0)">2</a>
+		<a href="javascript:void(0)">3</a>
+		<a href="javascript:void(0)">4</a>
+		<a href="javascript:void(0)">5</a>
+		<a href="javascript:void(0)">6</a>
+		<a href="javascript:void(0)">7</a>
+		<a href="javascript:void(0)">8</a>
+		<a href="javascript:void(0)">9</a>
+		<a href="javascript:void(0)">10</a>
+		<a href="javascript:void(0)" class="control next" aria-label="다음 페이지"></a>
+		<a href="javascript:void(0)" class="control last" aria-label="마지막 페이지"></a>
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>폼(그룹)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>그룹</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>기본</span></h4></div>
+						<div class="pub-tip"><em>NOTE</em><p>forms 내부에는 forms를 넣지 않는다.</p></div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>제목</span></h4></div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<div class="tit">제목</div>
+	
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>행</span></h4></div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<div class="row">
+		
+	</div>
+	<div class="row">
+		
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>공백 + 에러</span></h4></div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms error">
+	
+	<div class="space">-</div>
+	
+	<div class="msg"></div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>폼(선택)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>RADIO</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>열</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<div class="choice">
+		<div class="item"><input type="radio" name="" id=""><label for=""></label></div>
+		<div class="item"><input type="radio" name="" id=""><label for=""></label></div>
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>행</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<div class="choice row">
+		<div class="item"><input type="radio" name="" id=""><label for=""></label></div>
+		<div class="item"><input type="radio" name="" id=""><label for=""></label></div>
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>등분</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<div class="choice col2">
+		<div class="item"><input type="radio" name="" id=""><label for=""></label></div>
+		<div class="item"><input type="radio" name="" id=""><label for=""></label></div>
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>CHECKBOX</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>열</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<div class="choice">
+		<div class="item"><input type="checkbox" name="" id=""><label for=""></label></div>
+		<div class="item"><input type="checkbox" name="" id=""><label for=""></label></div>
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>행</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<div class="choice row">
+		<div class="item"><input type="checkbox" name="" id=""><label for=""></label></div>
+		<div class="item"><input type="checkbox" name="" id=""><label for=""></label></div>
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>등분</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<div class="choice col2">
+		<div class="item"><input type="checkbox" name="" id=""><label for=""></label></div>
+		<div class="item"><input type="checkbox" name="" id=""><label for=""></label></div>
+	</div>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>폼(입력)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>SEARCH</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="foms">
+	<form action="">
+		<input type="search" title="???">
+	</form>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>TEXT</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<input type="text" title="???">
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>PASSWORD</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<input type="password" title="???">
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>SELECT</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<select title="???">
+		<option value="" selected="selected"></option>
+		<option value=""></option>
+	</select>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>TEXTAREA</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<div class="forms">
+	<textarea rows="3" title="???"></textarea>
+</div>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>폼(예제들)</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>???</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>???</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>아이콘/플래그</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>아이콘</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>타입1</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<em class="ico-img a">PDF</em>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>플래그</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>타입1</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<em class="flags a">LABEL</em>
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>슬라이드</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>기본</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-real">
+<!-- SLIDE -->
+<div class="slides">
+	<!-- SWIPER -->
+	<div class="swiper-container">
+		<ul class="swiper-wrapper">
+			<li class="swiper-slide">
+				<div class="inr">
+					<a href="javascript:void(0)" role="button"><span>슬라이드1</span></a>
+				</div>
+			</li>
+			<li class="swiper-slide">
+				<div class="inr">
+					<a href="javascript:void(0)" role="button"><span>슬라이드2</span></a>
+				</div>
+			</li>
+		</ul>
+		<div class="swiper-controller">
+			<!-- Add Arrows -->
+			<div class="swiper-button">
+				<div class="swiper-btn-prev"></div>
+				<div class="swiper-btn-next"></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<!-- //SWIPER -->
+</div>
+<!-- //SLIDE -->
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+<!-- SLIDE -->
+<div class="slides">
+	<!-- SWIPER -->
+	<div class="swiper-container">
+		<ul class="swiper-wrapper">
+			<li class="swiper-slide">
+				<div class="inr">
+					<a href="javascript:void(0)" role="button"><span>슬라이드1</span></a>
+				</div>
+			</li>
+			<li class="swiper-slide">
+				<div class="inr">
+					<a href="javascript:void(0)" role="button"><span>슬라이드2</span></a>
+				</div>
+			</li>
+		</ul>
+		<div class="swiper-controller">
+			<!-- Add Arrows -->
+			<div class="swiper-button">
+				<div class="swiper-btn-prev"></div>
+				<div class="swiper-btn-next"></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<!-- //SWIPER -->
+</div>
+<!-- //SLIDE -->
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+
+			<!-- SITE -->
+			<div class="pub-site">
+				<div class="pub-site-title"><h2><span>콘텐츠</span></h2></div>
+				<!-- GROUP -->
+				<div class="pub-site-content">
+					<div class="pub-sub-title"><h3><span>???</span></h3></div>
+					<!-- TEMPLATE -->
+					<div class="pub-template">
+						<div class="pub-sub-title"><h4><span>???</span></h4></div>
+						<div class="pub-real">
+마크업
+						</div>
+						<div class="pub-code">
+<xmp class="pub-pre">
+
+</xmp>
+						</div>
+					</div>
+					<!-- //TEMPLATE -->
+				</div>
+				<!-- //GROUP -->
+			</div>
+			<!-- //SITE -->
+		</div>
+	</div>
+</div>
+<script src="./mockup.js"></script>
+</body>
+</html>

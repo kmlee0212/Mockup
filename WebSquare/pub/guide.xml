@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/mockup.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+			<xf:instance>
+			    <data xmlns=""/>
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection>
+			</w2:workflowCollection>
+        </xf:model>
+        <style>
+			.w2group {background-color:transparent;}
+			html {overflow:visible;}
+		</style>
+        <script type="text/javascript" lazy="false"><![CDATA[
+		]]></script>
+		<script type="javascript" src="/mockup.js"></script>
+    </head>
+    <body>
+
+	<xf:group id="" class="pub-wrap">
+		<w2:attributes>
+			<w2:data-layout>guide</w2:data-layout>
+		</w2:attributes>
+		<xf:group id="" class="pub-page">
+			<xf:group id="" class="pub-header">
+				<xf:group id="" class="pub-core">
+					<xf:group id="" class="pub-title">
+						<w2:textbox id="" label="가이드" tagname="h1"></w2:textbox>
+						<!-- <xf:group id="" class="pub-tab-list">
+							<xf:group id="" tagname="button" class="pub-tab on">
+								<w2:attributes>
+									<w2:type>button</w2:type>
+									<w2:onclick>location.href=''</w2:onclick>
+								</w2:attributes>
+								<w2:span label="PC"></w2:span>
+							</xf:group>
+							<xf:group id="" tagname="button" class="pub-tab">
+								<w2:attributes>
+									<w2:type>button</w2:type>
+									<w2:onclick>location.href=''</w2:onclick>
+								</w2:attributes>
+								<w2:span id="" label="MO"></w2:span>
+							</xf:group>
+						</xf:group> -->
+					</xf:group>
+					<xf:group id="" class="pub-side">
+						<xf:group id="" class="pub-side-inr">
+							<xf:group id="" class="pub-legend">
+								<xf:group id="" class="pub-group">
+								</xf:group>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+			<xf:group id="" class="pub-content">
+				<!-- SITE -->
+				<xf:group id="" class="pub-site">
+					<xf:group id="" class="pub-site-title"><xf:group id="" tagname="h2"><w2:span label="base"></w2:span></xf:group></xf:group>
+					<!-- GROUP -->
+					<xf:group id="" class="pub-site-content">
+						<xf:group id="" class="pub-tip"><w2:textbox id="" tagname="em" label="TIP"></w2:textbox><w2:textbox id="" label="참고문구" tagname="p"></w2:textbox></xf:group>
+						<!-- TEMPLATE -->
+						<xf:group id="" class="pub-template">
+							<xf:group id="" class="pub-real">
+
+							</xf:group>
+							<xf:group id="" class="pub-code">
+<xf:group tagname="xmp" class="pub-pre">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" /&gt;
+&lt;meta name="format-detection" content="telephone=no" /&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;link rel="stylesheet" href="" /&gt;
+&lt;script src=""&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="wrap"&gt;
+	&lt;!-- PAGE --&gt;
+	&lt;div class="page-wrap"&gt;
+		&lt;header class="header"&gt;
+		&lt;/header&gt;
+		&lt;section class="container"&gt;
+		&lt;/section&gt;
+		&lt;footer class="footer"&gt;
+		&lt;/footer&gt;
+	&lt;/div&gt;
+	&lt;!-- //PAGE --&gt;
+	&lt;!-- POPUP --&gt;
+	&lt;div class="popup-wrap"&gt;
+	&lt;/div&gt;
+	&lt;!-- //POPUP --&gt;
+	&lt;!-- TOOLTIP --&gt;
+	&lt;div class="tooltip-wrap"&gt;
+	&lt;/div&gt;
+	&lt;!-- //TOOLTIP --&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+	함수명(); //함수 호출
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</xf:group>
+							</xf:group>
+						</xf:group>
+						<!-- //TEMPLATE -->
+					</xf:group>
+					<!-- //GROUP -->
+				</xf:group>
+				<!-- //SITE -->
+				<!-- SITE -->
+				<xf:group id="" class="pub-site">
+					<xf:group id="" class="pub-site-title"><xf:group id="" tagname="h2"><w2:span label="layout"></w2:span></xf:group></xf:group>
+					<!-- GROUP -->
+					<xf:group id="" class="pub-site-content">
+						<xf:group id="" class="pub-sub-title">
+							<xf:group id="" tagname="h3"><w2:span id="" label="본문"></w2:span></xf:group>
+						</xf:group>
+						<!-- TEMPLATE -->
+						<xf:group id="" class="pub-template">
+							<xf:group id="" class="pub-real">
+
+							</xf:group>
+							<xf:group id="" class="pub-code">
+<xf:group tagname="xmp" class="pub-pre">
+
+</xf:group>
+							</xf:group>
+						</xf:group>
+						<!-- //TEMPLATE -->
+					</xf:group>
+					<!-- //GROUP -->
+					<!-- GROUP -->
+					<xf:group id="" class="pub-site-content">
+						<xf:group id="" class="pub-sub-title">
+							<xf:group id="" tagname="h3"><w2:span id="" label="팝업"></w2:span></xf:group>
+						</xf:group>
+						<!-- TEMPLATE -->
+						<xf:group id="" class="pub-template">
+							<xf:group id="" class="pub-sub-title">
+								<xf:group id="" tagname="h4"><w2:span id="" label="center"></w2:span></xf:group>
+							</xf:group>
+							<xf:group id="" class="pub-real">
+
+							</xf:group>
+							<xf:group id="" class="pub-code">
+<xf:group id="" tagname="xmp" class="pub-pre">
+
+</xf:group>
+							</xf:group>
+						</xf:group>
+						<!-- //TEMPLATE -->
+					</xf:group>
+					<!-- //GROUP -->
+				</xf:group>
+				<!-- //SITE -->
+				<!-- SITE -->
+				<xf:group id="" class="pub-site">
+					<xf:group id="" class="pub-site-title"><xf:group id="" tagname="h2"><w2:span label="???"></w2:span></xf:group></xf:group>
+					<!-- GROUP -->
+					<xf:group id="" class="pub-site-content">
+						<xf:group id="" class="pub-sub-title">
+							<xf:group id="" tagname="h3"><w2:span id="" label="???"></w2:span></xf:group>
+						</xf:group>
+						<!-- TEMPLATE -->
+						<xf:group id="" class="pub-template">
+							<xf:group id="" class="pub-sub-title">
+								<xf:group id="" tagname="h4"><w2:span label="???"></w2:span></xf:group>
+							</xf:group>
+							<xf:group id="" class="pub-real">
+
+							</xf:group>
+							<xf:group id="" class="pub-code">
+<xf:group tagname="xmp" class="pub-pre">
+
+</xf:group>
+							</xf:group>
+						</xf:group>
+						<!-- //TEMPLATE -->
+					</xf:group>
+					<!-- //GROUP -->
+				</xf:group>
+				<!-- //SITE -->
+			</xf:group>
+		</xf:group>
+	</xf:group>
+
+    </body>
+</html>

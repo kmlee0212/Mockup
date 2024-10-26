@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/mockup.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+        <style>
+			.w2group {background-color:transparent;}
+		</style>
+        <script type="text/javascript" lazy="false"><![CDATA[
+			//SETTINGS
+			var ext='html'; //확장명 선언
+			var env='1';    //작업 환경 (모바일 1, PC 0)
+			var tab='1';    //탭 여부 (사용 1, 미사용 0)
+			var dep='6';    //사용할 뎁스 (최대 6)
+			var scn='1';    //화면명 항목 (사용 1, 미사용 0)
+			var pub='1';    //퍼블 항목 (사용 1, 미사용 0)
+			var pla='1';    //기획 항목 (사용 1, 미사용 0)
+			var dev='1';    //개발 항목 (사용 1, 미사용 0)
+			var wbs='1';    //완료예정일 항목 (사용 1, 미사용 0)
+			var chk='1';    //검수 단계 (사용 1, 미사용 0)
+			var fin='0';    //프로젝트 현황 (종료 1, 미종료 0)
+			var holiday=['','']; //프로젝트 기간내 공휴일 YYYY-MM-DD 형식으로 기입 (전일수정일 관련)
+
+			/*
+			COUNT 항목  : 통계가 필요한 메뉴의 경우 1, 아니면 0 기입
+			TYPE 항목   : (본문) m, (탭) t, (팝업) p, (풀팝업) fp, (센터팝업) cp, (바텀팝업) bp 기입
+			STATE 항목  : (퍼블중) 1, (검수중) 2, (삭제) 0 기입 //삭제 시 사유를 MEMO 항목에 [메모내용] 형식으로 기입, [][] 형식으로 반복 작성
+			DATE 항목   : (완료일자) YYYY-MM-DD 형식으로 기입
+			SB 항목     : 최종 진행한 스토리보드 파일명 기입
+			MODIFY 항목 : ['YYYY-MM-DD','수정내용'] 형식으로 기입, ['','']['',''] 형식으로 반복 작성 //최근일자를 맨앞으로
+			*/
+
+			//INDEX
+			var pub_index_data = [
+				{COUNT:"0",DEP1:"가이드",DEP2:"템플릿",DEP3:"",DEP4:"",DEP5:"",DEP6:"",SCREEN:"",URL:"/pub/",ID:"guide",TYPE:"",PUB:"",PLA:"",DEV:"",WBS:"",STATE:"",DATE:"",MEMO:"[]",SB:"",MODIFY:"['','']"},
+				{COUNT:"1",DEP1:"메인",DEP2:"",DEP3:"",DEP4:"",DEP5:"",DEP6:"",SCREEN:"",URL:"/pub/xml/",ID:"",TYPE:"",PUB:"",PLA:"",DEV:"",WBS:"",STATE:"",DATE:"",MEMO:"[]",SB:"sb.pptx",MODIFY:"['','']"},
+				{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"",SCREEN:"",URL:"/pub/xml/",ID:"id",TYPE:"p",PUB:"",PLA:"",DEV:"",WBS:"2022-05-10",STATE:"1",DATE:"",MEMO:"[]",SB:"",MODIFY:"['','']"},
+				{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"뎁스6",SCREEN:"",URL:"/pub/xml/",ID:"id",TYPE:"",PUB:"",PLA:"",DEV:"",WBS:"2022-05-10",STATE:"2",DATE:"",MEMO:"[]",SB:"",MODIFY:"['','']"},
+				{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"뎁스6",SCREEN:"화면명",URL:"/pub/xml/",ID:"id",TYPE:"",PUB:"아무개",PLA:"",DEV:"",WBS:"2022-05-10",STATE:"0",DATE:"2022-05-13",MEMO:"[111]",SB:"",MODIFY:"['2022-05-12','testtesttest']['2022-05-12','test']"},
+				{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"뎁스6",SCREEN:"",URL:"/pub/xml/",ID:"id",TYPE:"",PUB:"아무개",PLA:"아무개",DEV:"아무개",WBS:"2022-05-10",STATE:"2",DATE:"2022-05-13",MEMO:"[222][333]",SB:"",MODIFY:"['2022-05-15','test2']['2022-05-12','test1']['2022-05-11','test']"},
+			]
+		]]></script>
+		<script type="javascript" src="/mockup.js"></script>
+    </head>
+    <body>
+
+	<xf:group id="" class="pub-wrap">
+		<w2:attributes>
+			<w2:data-layout>index</w2:data-layout>
+		</w2:attributes>
+		<xf:group id="" class="pub-page">
+			<xf:group id="" class="pub-header">
+				<xf:group id="" class="pub-core">
+					<xf:group id="" class="pub-title">
+						<w2:textbox id="" label="프로젝트명" tagname="h1"></w2:textbox>
+						<xf:group id="" class="pub-tab-list" style="display:none;">
+							<xf:group id="" tagname="button" class="pub-tab on">
+								<w2:attributes>
+									<w2:type>button</w2:type>
+									<w2:onclick>location.href=''</w2:onclick>
+								</w2:attributes>
+								<w2:span id="" label="PC"></w2:span>
+							</xf:group>
+							<xf:group id="" tagname="button" class="pub-tab">
+								<w2:attributes>
+									<w2:type>button</w2:type>
+									<w2:onclick>location.href=''</w2:onclick>
+								</w2:attributes>
+								<w2:span id="" label="MO"></w2:span>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</xf:group>
+
+    </body>
+</html>

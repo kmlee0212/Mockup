@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>[INDEX] 퍼블리싱</title>
+<link rel="stylesheet" href="./mockup.css">
+<script src="./jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+<script>
+	//SETTINGS
+	var ext='html'; //확장명 선언
+	var env='1';    //작업 환경 (모바일 1, PC 2)
+	var tab='1';    //탭 여부 (사용 1, 미사용 0)
+	var dep='6';    //사용할 뎁스 (최대 6)
+	var scn='1';    //화면명 항목 (사용 1, 미사용 0)
+	var pla='1';    //기획 항목 (사용 1, 미사용 0)
+	var dgn='1';    //디자인 항목 (사용 1, 미사용 0)
+	var dev='1';    //개발 항목 (사용 1, 미사용 0)
+	var wbs='1';    //완료예정일 항목 (사용 1, 미사용 0)
+	var chk='1';    //검토 단계 (사용 1, 미사용 0)
+	var csv='1';    //CSV다운로드 (사용 1, 미사용 0)
+	var fin='0';    //프로젝트 현황 (종료 1, 미종료 0)
+	var holiday=['','']; //프로젝트 기간내 공휴일 YYYY-MM-DD 형식으로 기입 (전일체크 관련)
+
+	//LEADERS
+	var planners='';
+	var designers='';
+	var publishers='이강민';
+	var developers='';
+
+	/*
+	COUNT 항목  : 통계가 필요한 메뉴의 경우 1, 아니면 0
+	TYPE 항목   : (본문) f, (탭) t, (팝업) p, (풀팝업) fp, (센터팝업) cp, (바텀팝업) bp
+	STATUS 항목 : (삭제) 0, (대기) 1, (퍼블중) 2, (검토중) 3, (재검토중) 4 //삭제 시 사유를 NOTE 항목에 내용 기입
+	END 항목   : (완료일자) YYYY-MM-DD 형식으로 기입
+	SB 항목     : 최종 진행한 스토리보드 파일명 기입
+	MODIFY 항목 : [YYYY-MM-DD 수정내용] 형식으로 기입, [][] 형식으로 반복하고 맨앞으로 신규내역 작성
+	*/
+
+	//INDEX2
+	var $pub_index_data = [
+		{COUNT:"0",DEP1:"가이드",DEP2:"컴포넌트",DEP3:"",DEP4:"",DEP5:"",DEP6:"",SCREEN:"",TYPE:"",URL:"/pub/",ID:"guide",PLA:"",DGN:"",PUB:"",DEV:"",STATUS:"1",WBS:"",END:"",NOTE:"",SB:"",MODIFY:
+			"[]"
+		},
+
+		{COUNT:"1",DEP1:"메인",DEP2:"",DEP3:"",DEP4:"",DEP5:"",DEP6:"",SCREEN:"",TYPE:"f",URL:"/pub/html/",ID:"ID",PLA:"",DGN:"",PUB:"",DEV:"",STATUS:"1",WBS:"",END:"",NOTE:"",SB:"sb.pptx",MODIFY:
+			"[]"
+		},
+		{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"",SCREEN:"",TYPE:"p",URL:"/pub/html/",ID:"ID",PLA:"",DGN:"",PUB:"",DEV:"",STATUS:"2",WBS:"2023-04-28",END:"",NOTE:"",SB:"",MODIFY:
+			"[]"
+		},
+		{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"뎁스6",SCREEN:"",TYPE:"f",URL:"/pub/html/",ID:"ID",PLA:"",DGN:"",PUB:"",DEV:"",STATUS:"3",WBS:"2022-05-10",END:"",NOTE:"",SB:"",MODIFY:
+			"[]"
+		},
+		{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"뎁스6",SCREEN:"",TYPE:"l",URL:"/pub/html/",ID:"ID",PLA:"",DGN:"",PUB:"",DEV:"",STATUS:"4",WBS:"2022-05-10",END:"",NOTE:"",SB:"",MODIFY:
+			"[]"
+		},
+		{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"뎁스6",SCREEN:"화면명",TYPE:"f",URL:"/pub/html/",ID:"ID",PLA:"",DGN:"",PUB:"아무개",DEV:"아무개",STATUS:"0",WBS:"2022-05-10",END:"2022-05-13",NOTE:"111",SB:"",MODIFY:
+			"[2022-05-12 testtesttest][2022-05-11 test9]"
+		},
+		{COUNT:"1",DEP1:"메인",DEP2:"뎁스2",DEP3:"뎁스3",DEP4:"뎁스4",DEP5:"뎁스5",DEP6:"뎁스6",SCREEN:"",TYPE:"t",URL:"/pub/html/",ID:"ID",PLA:"아무개",DGN:"아무개",PUB:"아무개",DEV:"아무개",STATUS:"3",WBS:"2022-05-10",END:"2023-04-28",NOTE:"222",SB:"",MODIFY:
+			"[2023-11-08 test2][2022-05-12 test1][2022-05-11 test]"
+		},
+	]
+</script>
+
+<div class="pub-wrap" data-layout="index">
+	<div class="pub-page">
+		<div class="pub-header">
+			<div class="pub-header-inr">
+				<div class="pub-title">
+					<h1>프로젝트명</h1>
+					<div class="pub-tab-list" style="display:none;">
+						<button type="button" onclick="location.href=''" class="pub-tab on">PC</button>
+						<button type="button" onclick="location.href=''" class="pub-tab">MO</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="./mockup.js"></script>
+</body>
+</html>
